@@ -16,11 +16,15 @@ public class TrainController {
         this.searchService = searchService;
     }
 
+
+    //Get all trains
     @GetMapping("/all")
     public List<TravelOptionResponseDTO> getAllTrains() {
         return searchService.getAllTrains();
     }
 
+
+    //Get trains from one place to another
     @GetMapping("/search")
     public List<TravelOptionResponseDTO> searchTrains(
             @RequestParam String from,

@@ -16,11 +16,13 @@ public class FlightController {
         this.searchService = searchService;
     }
 
+    //Get all flights
     @GetMapping("/all")
     public List<TravelOptionResponseDTO> getAllFlights() {
         return searchService.getAllFlights();
     }
 
+    //Search flights from one place to another
     @GetMapping("/search")
     public List<TravelOptionResponseDTO> searchFlights(
             @RequestParam String from,

@@ -26,6 +26,8 @@ public class PaymentService {
         this.searchService = searchService;
     }
 
+
+    //Method to make payment
     public PaymentResponseDTO makePayment(PaymentRequestDTO requestDTO) {
 
         //Get Booking

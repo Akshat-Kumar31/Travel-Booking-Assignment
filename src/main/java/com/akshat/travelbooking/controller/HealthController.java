@@ -27,7 +27,7 @@ public class HealthController {
         this.paymentService = paymentService;
     }
 
-    @GetMapping("/api/health")
+    @GetMapping("/api/v1/health")
     public Map<String, Object> healthCheck() {
 
         Map<String, Object> response = new HashMap<>();

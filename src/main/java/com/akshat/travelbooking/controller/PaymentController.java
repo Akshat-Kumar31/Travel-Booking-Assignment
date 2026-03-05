@@ -19,6 +19,8 @@ public class PaymentController {
         this.service = service;
     }
 
+
+    //Make payment
     @PostMapping
     public ResponseEntity<PaymentResponseDTO> makePayment(
             @Valid @RequestBody PaymentRequestDTO requestDTO) {

@@ -24,6 +24,8 @@ public class BookingService {
         this.searchService = searchService;
     }
 
+
+    //Method to create a new booking
     public BookingResponseDTO createBooking(BookingRequestDTO requestDTO) {
 
         TravelOption option = searchService.getById(requestDTO.getTravelOptionId());
@@ -44,6 +46,8 @@ public class BookingService {
         );
     }
 
+
+    //Method to get booking by booking ID
     public Booking getBookingById(Long bookingId) {
         return bookings.stream()
                 .filter(b -> b.getId().equals(bookingId))
@@ -52,6 +56,8 @@ public class BookingService {
                         new ResourceNotFoundException("Booking not found with id: " + bookingId));
     }
 
+
+    //Method to get booking Status
     public BookingResponseDTO getBookingStatus(Long bookingId) {
 
         Booking booking = getBookingById(bookingId);
@@ -64,6 +70,8 @@ public class BookingService {
         );
     }
 
+
+    //Method to get all bookings
     public List<BookingResponseDTO> getAllBookings() {
 
         if (bookings.isEmpty()) {
