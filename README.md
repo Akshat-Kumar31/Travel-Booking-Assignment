@@ -1,7 +1,7 @@
 # Travel Booking System
 
 A simple **Spring Boot backend** for booking trains and flights with dummy payments.  
-Static data is used for trains/flights. The project is Docker-ready and can be deployed on cloud platforms like Render.
+Static data is used for trains/flights. The project is Docker-ready and is deployed on the cloud platform "Render".
 
 ---
 
@@ -164,6 +164,28 @@ Swagger UI allows you to:
 - Check request and response formats
 - Execute API calls directly from the browser
 - Test the complete booking and payment flow without using Postman
+
+
+## 🌐 Live Deployment
+
+The application is deployed on **Render** and is publicly accessible.
+
+| Service | URL |
+|-------|------|
+| Base API URL | https://travel-booking-app-6683.onrender.com |
+| Swagger UI (API Documentation & Testing) | https://travel-booking-app-6683.onrender.com/swagger-ui/index.html |
+
+### Example API URLs
+
+| Endpoint | Description |
+|--------|-------------|
+| GET `/api/v1/trains/all` | Get all available trains |
+| GET `/api/v1/flights/all` | Get all available flights |
+| POST `/api/v1/bookings` | Create a booking |
+| POST `/api/v1/payments` | Make a payment |
+
+Example:
+https://travel-booking-app-6683.onrender.com/api/v1/trains/all
 
 
 ## 📌 Notes
