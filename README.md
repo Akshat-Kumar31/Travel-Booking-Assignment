@@ -1,3 +1,12 @@
+
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-Build-blue)
+![Docker](https://img.shields.io/badge/Docker-Supported-blue)
+![Render](https://img.shields.io/badge/Deployment-Render-purple)
+![Swagger](https://img.shields.io/badge/API%20Docs-Swagger-green)
+
+
 # Travel Booking System
 
 A simple **Spring Boot backend** for booking trains and flights with dummy payments.  
