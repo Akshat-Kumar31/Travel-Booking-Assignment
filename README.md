@@ -188,6 +188,9 @@ Example:
 https://travel-booking-app-6683.onrender.com/api/v1/trains/all
 
 
+⚠️ Note: The application is hosted on Render's free tier.
+If the service has been idle, it may take **30–60 seconds to start** when the API is accessed for the first time.
+
 ## 📌 Notes
 
 - This project uses **static in-memory data**.
